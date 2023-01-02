@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:h2:~/test;AUTO_SERVER=TRUE
+    username: sa
+    password: 123
+  jooq:
+    sql-dialect: h2
+  h2:
+    console:
+      path: /h2
+      enabled: true
+      settings:
+        web-allow-others: true
+
+  sql.init.mode: always
+
